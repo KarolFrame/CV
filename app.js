@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(() => {
                     contenido.style.opacity = 1;
                 }, 10);
-                icono.classList.replace("fa-arrow-down", "fa-arrow-up");
+                icono.classList.replace("fa-chevron-down", "fa-chevron-up");
             } else {
                 contenido.style.opacity = 0;
                 setTimeout(() => {
                     contenido.style.display = "none";
                 }, 500);
-                icono.classList.replace("fa-arrow-up", "fa-arrow-down");
+                icono.classList.replace("fa-chevron-up", "fa-chevron-down");
             }
         });
     });
