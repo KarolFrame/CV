@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
             if (contenido.style.opacity === "0" || contenido.style.opacity === "") {
                 contenido.style.display = "block";
                 setTimeout(() => {
-                    contenido.style.opacity = 1;  // Desvanecimiento hacia visible
-                }, 10);  // Asegura que el cambio de opacidad ocurra después de que el contenido se muestre
+                    contenido.style.opacity = 1;
+                }, 10);
                 icono.classList.replace("fa-arrow-down", "fa-arrow-up");
             } else {
-                contenido.style.opacity = 0;  // Desvanecimiento hacia invisible
+                contenido.style.opacity = 0;
                 setTimeout(() => {
                     contenido.style.display = "none";
-                }, 500);  // Espera a que el desvanecimiento termine antes de ocultar el contenido
+                }, 500);
                 icono.classList.replace("fa-arrow-up", "fa-arrow-down");
             }
         });
